@@ -13,7 +13,7 @@ public class GerenteDeVendas {
 	public void venderProduto(long codProduto, int quant) throws QuantidadeInvalidaException{
 		Produto p = this.gerenteProduto.getProduto(codProduto);
 		if(quant > p.getQuantidade() || quant <= 0){
-			throw new QuantidadeInvalidaException("Quantidade Inválida");
+			throw new QuantidadeInvalidaException("Quantidade Invï¿½lida");
 		}
 		p.setQuantidade(p.getQuantidade()-quant);
 	}

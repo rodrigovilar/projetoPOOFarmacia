@@ -16,7 +16,7 @@ public class GerenteDeClientes {
 
 	public void cadastrarCliente(Cliente c) {
 		if(isCadastrado(c.getId())){
-			throw new ClienteJaExistenteException("Cliente já cadastrado");
+			throw new ClienteJaExistenteException("Cliente jï¿½ cadastrado");
 		}
 		clientes.add(c);
 		

@@ -250,7 +250,7 @@ public class FarmaciaTest {
 	
 	@Test
 	public void	pesquisaClienteTest(){
-		Cliente c = new ClienteFisico("Tayná","434.865.555-45");
+		Cliente c = new ClienteFisico("Taynï¿½","434.865.555-45");
 		farmacia.cadastrarCliente(c);
 		assertEquals(c, farmacia.pesquisarCliente("434.865.555-45"));
 	}
@@ -266,9 +266,9 @@ public class FarmaciaTest {
 	
 	@Test(expected = ClienteJaExistenteException.class)
 	public void cadastraClienteFisicoComMesmoIdTest(){
-		Cliente c = new ClienteFisico("Tayná","434.865.555-45");
+		Cliente c = new ClienteFisico("Taynï¿½","434.865.555-45");
 		farmacia.cadastrarCliente(c);
-		Cliente d = new ClienteFisico("Tayná","434.865.555-45");
+		Cliente d = new ClienteFisico("Taynï¿½","434.865.555-45");
 		farmacia.cadastrarCliente(d);
 	}
 	
